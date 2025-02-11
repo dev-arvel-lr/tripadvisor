@@ -5,17 +5,23 @@ from selenium.common.exceptions import WebDriverException
 import time
 import pickle
 import undetected_chromedriver as uc
+
+
+API_KEY = ""
+
+def solve_cap
+
 try:
     # Set up Chrome options
     chrome_options = Options()
 
-    # chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
 
     # proxy = "https://AbCdEf654321:AbCdEf123456_country-jp@geo.iproyal.com:12321"
 
-    # # Path to the proxy extension (if needed)
-    # proxy_extension_path = r"C:\Users\franc\OneDrive\Documents\TripAdvisor\proxy_extension" 
-    # chrome_options.add_argument("--load-extension=" + proxy_extension_path)
+    # Path to the proxy extension (if needed)
+    proxy_extension_path = r"C:\Users\franc\OneDrive\Documents\TripAdvisor\proxy_extension" 
+    chrome_options.add_argument("--load-extension=" + proxy_extension_path)
 
     # Specify the path to chromedriver
     service = Service("C:/Drivers/chromedriver.exe")
